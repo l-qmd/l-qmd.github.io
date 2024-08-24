@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'MeieScript';
+    src: url('MeieScript-Regular.ttf');
+    font-weight: 400;
+  }
+body{
+    background-color: #EAEAEA;
+}
+
+.darkmode{
+    text-align: right;
+}
+#dark_mode{
+    width: 32px;
+    height: 32px;  
+}
+.logo{
+    text-align: center;
+}
+#logo{
+    width: 128px;
+    height: 128px;
+    border-radius: 90%;
+}
+h1{
+    font-family: MeieScript;
+    font-size: 36px;
+    text-align: center;
+}
+#blue{
+    text-align: center;
+    font-size: 16px;
+    color: #0061FF; 
+    margin-top: 22px;
+}
+h3{
+    font-size: 20px;
+    text-align: center;
+}
+.gradient-border {
+    width: 284px;
+    height: 326px;
+    position: relative;
+    border-radius: 45%; 
+    padding: 5px;
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0;
+    
+    /* Pour les coins arrondis */
+}
+
+.gradient-border::before {
+    content: "";
+    position: absolute;
+    top: -2px; /* Ajustez pour le placement du dégradé */
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, #000000, #EAEAEA 100%);
+    border-radius: 10%;
+    z-index: -1;
+}
+#txthome{
+    position: absolute;
+    border-radius: 10%;
+    width: 279.5px;
+    height: 321.5px;
+    background-color: #EAEAEA;
+    
+}
+#texte{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 14px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#social{
+    display: inline-block;
+    margin: auto;
+}
+#social a{
+    margin-left: 48px;
+}
+
+
+/* Informatique */
+.gradient-border2{
+    width: 284px;
+    height: 326px;
+    position: relative;
+    border-radius: 45%; 
+    padding: 5px;
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0;
+    
+}
+
+.gradient-border2::before {
+    content: "";
+    position: absolute;
+    top: -2px; /* Ajustez pour le placement du dégradé */
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, #000000, #EAEAEA 100%);
+    border-radius: 10%;
+    z-index: -1;
+}
+
+#txtinfo{
+    position: absolute;
+    border-radius: 10%;
+    width: 279.5px;
+    height: 321.5px;
+    background-color: #EAEAEA;
+    
+}
