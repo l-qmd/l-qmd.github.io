@@ -71,7 +71,7 @@ h3{
     background-color: #EAEAEA;
     
 }
-#texte{
+.texte{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 14px;
@@ -114,11 +114,68 @@ h3{
     z-index: -1;
 }
 
-#txtinfo{
+.txtcomp{
     position: absolute;
     border-radius: 10%;
     width: 279.5px;
     height: 321.5px;
     background-color: #EAEAEA;
     
+}
+.logocomp{
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+.gradient-border3{
+    width: 284px;
+    height: 220px;
+    position: relative;
+    border-radius: 45%; 
+    padding: 5px;
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0;
+    
+}
+
+.gradient-border3::before {
+    content: "";
+    position: absolute;
+    top: -2px; /* Ajustez pour le placement du dégradé */
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, #000000, #EAEAEA 100%);
+    border-radius: 10%;
+    z-index: -1;
+}
+
+.txtcomp1{
+    position: absolute;
+    border-radius: 10%;
+    width: 279.5px;
+    height: 215.5px;
+    background-color: #EAEAEA;
+    
+}
+.projet{
+    width: 240px;
+    height: 135px;
+    border-radius: 25px;
+}
+#Halloween{
+    background-image: url("halloween.png");/* définissez la taille de l'image */
+    background-position: center; 
+    background-size: auto;
+
+}
+#Halloween h2{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #ffffff;
+
 }
