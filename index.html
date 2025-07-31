@@ -37,7 +37,7 @@
         .countdown {
             font-size: 2.5em;
             margin-top: 20px;
-            color: #ff6347;
+            color: #0681f5;
         }
 
         .footer {
@@ -46,20 +46,57 @@
             color: #cccccc;
         }
 
+        .social-links {
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            margin: 0 15px;
+            display: inline-block;
+        }
+
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.1);
+        }
+        .logo{
+            border-radius: 50%;
+        }
+
     </style>
 </head>
 <body>
 
     <div class="container">
+
+        <img src="logo.jpg" class="logo" alt="">
         <h1>Mon Portfolio est en Construction</h1>
         <p>Merci de votre patience ! Mon portfolio sera disponible le <strong>31 août</strong>.</p>
         
         <div id="countdown" class="countdown">
             Chargement du compteur...
         </div>
+
         
+
         <div class="footer">
             <p>Suivez-moi sur mes réseaux sociaux pour plus de mises à jour !</p>
+        </div>
+        <div class="social-links">
+            <a href="https://instagram.com/l.qmd" target="_blank">
+                <img src="icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/l_qmd_" target="_blank">
+                <img src="icons/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://github.com/l-qmd" target="_blank">
+                <img src="icons/github.svg" alt="GitHub">
+            </a>
         </div>
     </div>
 
