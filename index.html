@@ -1,129 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio - En Construction</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #f0f0f0;
-            text-align: center;
-            padding: 50px;
-            margin: 0;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background-color: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            padding: 30px;
-        }
-
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #ffffff;
-        }
-
-        p {
-            color: #cccccc;
-            font-size: 1.2em;
-        }
-
-        .countdown {
-            font-size: 2.5em;
-            margin-top: 20px;
-            color: #0681f5;
-        }
-
-        .footer {
-            margin-top: 30px;
-            font-size: 1em;
-            color: #cccccc;
-        }
-
-        .social-links {
-            margin-top: 40px;
-        }
-
-        .social-links a {
-            margin: 0 15px;
-            display: inline-block;
-        }
-
-        .social-links img {
-            width: 40px;
-            height: 40px;
-            transition: transform 0.3s ease;
-        }
-
-        .social-links img:hover {
-            transform: scale(1.1);
-        }
-        .logo{
-            border-radius: 50%;
-        }
-
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="logoclair.png" type="image/x-icon">
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">A propos</a></li>
+      <li><a href="projet.html">Projet</a></li>
+      <li><a href="article.html">Article</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="container">
-
-        <img src="logo.jpg" class="logo" alt="">
-        <h1>Mon Portfolio est en Construction</h1>
-        <p>Merci de votre patience ! Mon portfolio sera disponible le <strong>31 août</strong>.</p>
-        
-        <div id="countdown" class="countdown">
-            Chargement du compteur...
-        </div>
-
-        
-
-        <div class="footer">
-            <p>Suivez-moi sur mes réseaux sociaux pour plus de mises à jour !</p>
-        </div>
-        <div class="social-links">
-            <a href="https://instagram.com/l.qmd_" target="_blank">
-                <img src="icons/instagram.svg" alt="Instagram">
-            </a>
-            <a href="https://twitter.com/l_qmd_" target="_blank">
-                <img src="icons/twitter.svg" alt="Twitter">
-            </a>
-            <a href="https://github.com/l-qmd" target="_blank">
-                <img src="icons/github.svg" alt="GitHub">
-            </a>
-        </div>
+  <main>
+    <div class="left">
+      <img src="logoclair.png" alt="photo" />
     </div>
+    <div class="right">
+      <h1>Hey, I‘am <span class="gradient">L.qmd_</span></h1>
+      <h3>Student in PC preparatory class</h3>
+      <button>Contact me</button>
+    </div>
+  </main>
 
-    <script>
-        // Date de lancement (31 août)
-        var targetDate = new Date("Aug 31, 2025 00:00:00").getTime();
-
-        var countdownFunction = setInterval(function() {
-            var now = new Date().getTime();
-            var timeLeft = targetDate - now;
-
-            // Calcul des jours, heures, minutes et secondes
-            var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-            // Affichage du temps restant
-            document.getElementById("countdown").innerHTML = days + " jours " + hours + " heures " + minutes + " minutes " + seconds + " secondes";
-
-            // Si le compte à rebours est terminé, afficher un message
-            if (timeLeft < 0) {
-                clearInterval(countdownFunction);
-                document.getElementById("countdown").innerHTML = "Le portfolio est maintenant disponible !";
-            }
-        }, 1000);
-    </script>
-
+  <footer>
+    <div class="left-footer">
+      <h1 class="gradient" >L.qmd_</h1>
+      <p>© 2025, L.qmd_ . Tous droits réservés.</p>
+    </div>
+    <div class="right-footer">
+      <h3>SETTING</h3>
+      <img src="icons/Moon.png" alt="theme" />
+      <h3>SOCIAL NETWORKS</h3>
+      <div class="socials">
+        <a href="https://twitter.com/l_qmd_">
+        <img src="icons/Twitter.png" alt="Twitter" /></a>
+        <a href="mailto:lqmd.contact.qefij@slmails.com">
+        <img src="icons/Mail.png" alt="Mail" /></a>
+        <a href="https://github.com/l-qmd">
+        <img src="icons/Github.png" alt="GitHub" /></a>
+        <a href="https://instagram.com/l.qmd_">
+        <img src="icons/Instagram.png" alt="Instagram" /></a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
+
