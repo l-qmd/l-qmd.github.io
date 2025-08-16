@@ -1,2 +1,27 @@
-# l-qmd.github.io
-Ceci est mon portfolio en ligne, où je présente mes projets, mes compétences et mes réseaux sociaux. Il contient des liens vers mes réalisations, ainsi que mes profils sur diverses plateformes.
+# 🌐 l-qmd.github.io
+
+> [Accéder au site](https://l-qmd.github.io) — *Portfolio en cours de développement*
+
+---
+
+🎨 **À propos du projet**
+
+Ce portfolio est une vitrine personnelle que je développe avec passion en **HTML**, **CSS** et **JavaScript**.  
+Il a pour objectif de refléter mes compétences techniques tout en mettant en avant ma **créativité** et ma **personnalité**.
+
+---
+
+🚀 **Ce que vous y trouverez**
+- Des **projets** personnels et professionnels
+- Mes **compétences** en développement web
+- Une présentation authentique de **qui je suis**
+- Des liens vers mes **réseaux sociaux** et **profils en ligne**
+
+---
+
+🛠️ **Statut** : En construction  
+📅 Dernière mise à jour : *16/08/2025*
+
+---
+
+Merci de votre visite ! 🙌
