@@ -1,0 +1,1004 @@
+/* =================================
+   TABLE DES MATIÈRES
+   =================================
+   1. Reset & Configurations de base
+   2. Styles de typographie
+   3. Styles de navigation mobile
+   4. Styles généraux du corps
+   5. Navigation principale
+   6. Section principale
+   7. Boutons et interactions
+   8. Pied de page
+   9. Page Contact
+   10. Animations
+   11. Section Projets
+   12. Page À propos
+   13. Blog
+   14. Mode sombre
+   15. Responsive
+   ================================= */
+
+/* =================================
+   1. RESET & CONFIGURATIONS DE BASE
+   ================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* =================================
+   2. STYLES DE TYPOGRAPHIE
+   ================================= */
+.titre {
+  font-size: 50px;
+  background: linear-gradient(to right, #e4a937, #9a2d2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.subtitle{
+  font-size: 20px;
+}
+
+/* =================================
+   3. STYLES DE NAVIGATION MOBILE
+   ================================= */
+/* Menu hamburger et navigation responsive */
+.brand {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        position: relative;
+        z-index: 2;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        gap: 2rem;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        justify-content: center;
+        z-index: 1;
+        margin-right: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-link {
+        padding: 1rem;
+        display: block;
+        font-size: 1.5rem;
+        color: black;
+    }
+    
+    .navbar {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Modifier la couleur des barres du hamburger en mode sombre */
+    body.dark-mode .bar {
+        background-color: white;
+    }
+
+    /* Modifier le background du menu en mode sombre */
+    body.dark-mode .nav-menu {
+        background-color: #2d2f30;
+    }
+
+    /* Modifier la couleur des liens dans le menu en mode sombre */
+    body.dark-mode .nav-menu .nav-link {
+        color: white;
+    }
+}
+
+
+/* =================================
+   4. STYLES GÉNÉRAUX DU CORPS
+   ================================= */
+/* Configuration principale du body */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #1c1c1c;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* =================================
+   5. NAVIGATION PRINCIPALE
+   ================================= */
+/* Barre de navigation desktop */
+nav {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+li{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* =================================
+   6. SECTION PRINCIPALE
+   ================================= */
+/* Conteneur principal et mise en page */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+  min-height: 50pvh;
+}
+
+.left img {
+  width: 400px;
+  border-radius: 20px;
+}
+
+.right h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.gradient {
+  background: linear-gradient(to right, #e4a937, #9a2d2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.right h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  
+}
+
+/* =================================
+   7. BOUTONS ET INTERACTIONS
+   ================================= */
+/* Styles des boutons et effets hover */
+button {
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #984b1f;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #7e3a13;
+}
+
+/* =================================
+   8. PIED DE PAGE
+   ================================= */
+/* Structure et éléments du footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #e1e1e1;
+  flex-wrap: wrap;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.left-footer img {
+  height: 40px;
+}
+
+.right-footer {
+  text-align: right;
+}
+
+.right-footer h3 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.right-footer img {
+  height: 22px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.socials {
+  margin-top: 0.5rem;
+  transition: transform 0.3s;
+
+}
+
+.theme-toggle {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.theme-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.theme-icon:hover {
+    transform: scale(1.1);
+}
+
+/* =================================
+   9. PAGE CONTACT
+   ================================= */
+/* Formulaire et éléments de contact */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.contact-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    color: inherit;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #8B4513;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #693410;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    transition: transform 0.3s;
+     
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+/* =================================
+   10. ANIMATIONS
+   ================================= */
+/* Définitions des animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Animation des éléments au chargement */
+main {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.nav-link {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Animation de transition de page */
+@keyframes pageTransition {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Appliquer l'animation modifiée aux conteneurs principaux */
+main,
+.about-container,
+.contact-container,
+.projects-main,
+.blog-container {
+    animation: pageTransition 1s ease;  /* Durée augmentée à 1s pour plus de douceur */
+}
+
+/* Animation des liens de navigation au clic */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #e4a937, #9a2d2d);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: right;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-link.active {
+    color: #e4a937;
+}
+
+.nav-link.active::after {
+    transform: scaleX(1);
+}
+
+/* Ajouter cette règle pour le mode sombre */
+body.dark-mode .nav-link::after {
+    background: linear-gradient(to right, #3c8ce7, #00eaff);
+}
+
+/* =================================
+   11. SECTION PROJETS
+   ================================= */
+/* Grille et cartes de projets */
+.projects-main { 
+    padding: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-header { 
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-cover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-body {
+    padding: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.project-desc {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-actions .btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.project-actions .btn:first-child {
+    background-color: #3c8ce7;  /* Changement de la couleur en bleu */
+    color: white;
+    font-weight: 500;
+}
+
+.project-actions .btn:first-child:hover {
+    background-color: #2d7ad4;  /* Version plus foncée pour le hover */
+}
+
+/* Adaptation pour le mode sombre */
+body.dark-mode .project-actions .btn:first-child {
+    background-color: #3c8ce7;
+}
+
+body.dark-mode .project-actions .btn:first-child:hover {
+    background-color: #2d7ad4;
+}
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn.ghost {
+    background: transparent;
+    border: 1px solid #984b1f;
+    color: #984b1f;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =================================
+   12. PAGE À PROPOS
+   ================================= */
+/* Mise en page et contenus about */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.competences-title {
+  font-size: 2.5rem;
+  margin: 3rem 0;
+  text-align: center;
+  color: #000;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.skill-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.skill-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+}
+
+.projects-link {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.projects-link p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.projects-button {
+  display: none;
+}
+
+.projects-button-small {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #984b1f;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.projects-button-small:hover {
+    background-color: #7e3a13;
+}
+
+/* =================================
+   13. BLOG
+   ================================= */
+/* Structure et composants du blog */
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.blog-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Cards des articles */
+.blog-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-banner {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+/* Vue article individuel */
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.post-banner {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.post-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.post-meta {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.post-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Styles pour la grille d'articles */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.blog-card {
+    cursor: pointer;
+}
+
+.article-title {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.article-title:hover {
+    opacity: 0.8;
+}
+
+.article-preview {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.article-content {
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.article-introduction {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.section-content {
+    margin: 1rem 0 2rem;
+}
+
+.section-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.article-conclusion {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    font-weight: 500;
+}
+
+/* Dark mode adaptations */
+body.dark-mode .article-preview {
+    color: #ccc;
+}
+
+body.dark-mode .article-content {
+    border-color: #444;
+}
+
+body.dark-mode .article-conclusion {
+    border-color: #444;
+}
+
+/* =================================
+   14. MODE SOMBRE
+   ================================= */
+/* Styles spécifiques au thème sombre */
+body.dark-mode {
+  background-color: #2d2f30;
+  color: #ffffff;
+}
+
+body.dark-mode nav {
+  background-color: #2d2f30;
+}
+
+body.dark-mode nav a {
+  color: #ffffff;
+}
+
+body.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .gradient {
+  background: linear-gradient(to right, #3c8ce7, #00eaff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.dark-mode button {
+  background-color: #4a90e2;
+}
+
+body.dark-mode button:hover {
+  background-color: #327dc0;
+}
+
+body.dark-mode .skill-box {
+  background: #383838;
+}
+
+body.dark-mode .skill-box p {
+  color: #fff;
+}
+
+
+head .dark-mode .favicon {
+    content: url('logosombre.png');
+}
+/* Correction des icônes dans le footer */
+body.dark-mode .socials img {
+    content: url('icons/Twitter-clair.png');
+}
+
+body.dark-mode .socials a:nth-child(1) img {
+    content: url('icons/Twitter-clair.png');
+}
+
+body.dark-mode .socials a:nth-child(2) img {
+    content: url('icons/Mail-clair.png');
+}
+
+body.dark-mode .socials a:nth-child(3) img {
+    content: url('icons/Github-clair.png');
+}
+
+body.dark-mode .socials a:nth-child(4) img {
+    content: url('icons/Instagram-clair.png');
+}
+body.dark-mode .edit{
+  content: url('icons/edit-clair.png');
+}
+
+body.dark-mode .language{
+  content: url('icons/language-clair.png');
+}
+
+/* Correction du bouton projet et titre compétences dans about.html */
+body.dark-mode .projects-button-small {
+    background-color: #4a90e2;
+    color: white;
+}
+
+body.dark-mode .projects-button-small :hover{
+    background-color: #327dc0;
+
+}
+
+
+body.dark-mode .competences-title {
+    color: white;
+}
+
+/* Correction des cartes projets */
+body.dark-mode .project-card {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+}
+
+body.dark-mode .project-title,
+body.dark-mode .project-desc {
+    color: white;
+}
+
+body.dark-mode .btn.ghost {
+    color: white;
+    border-color: white;
+}
+
+/* Correction des icônes de contact */
+body.dark-mode .social-links img {
+    filter: brightness(100);
+}
+
+/* Gestion du logo */
+body.dark-mode .logo-img {
+    content: url('logosombre.png');
+}
+body.dark-mode .presentation-image{
+    content: url('presentationsombre.png');
+}
+
+/* =================================
+   15. RESPONSIVE
+   ================================= */
+/* Adaptations pour différentes tailles d'écran */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .competences-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+  }
+  .left img{
+    width: 250px;
+  }
+  .social-links img{
+    width: 30px;
+    height: 30px;
+
+  }
+
+
+}
+
+.presentation-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.skill-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+  .left-footer,
+  .right-footer {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .right-footer {
+    margin-top: 1rem;
+  }
+  .socials {
+    justify-content: center;
+  }
+}
+

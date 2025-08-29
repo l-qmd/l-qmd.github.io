@@ -1,0 +1,22 @@
+{
+    "id": "exemple-article",
+    "title": "Mon premier article",
+    "date": "2025-08-26",
+    "tags": ["cybersécurité", "web"],
+    "banner": "presentation.jpg",
+    "content": {
+        "introduction": "Introduction de l'article...",
+        "sections": [
+            {
+                "title": "Première partie",
+                "content": "Contenu de la première partie...",
+                "image": "images/articles/section1.jpg"
+            },
+            {
+                "title": "Deuxième partie",
+                "content": "Contenu de la deuxième partie..."
+            }
+        ],
+        "conclusion": "Conclusion de l'article..."
+    }
+}
