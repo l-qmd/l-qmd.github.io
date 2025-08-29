@@ -537,13 +537,13 @@ body.dark-mode .nav-link::after {
 }
 
 .project-actions .btn:first-child {
-    background-color: #3c8ce7;  /* Changement de la couleur en bleu */
+    background-color: #984b1f;  /* Changement de la couleur en bleu */
     color: white;
     font-weight: 500;
 }
 
 .project-actions .btn:first-child:hover {
-    background-color: #2d7ad4;  /* Version plus foncée pour le hover */
+    background-color: #693410;  /* Version plus foncée pour le hover */
 }
 
 /* Adaptation pour le mode sombre */
