@@ -19,7 +19,7 @@ Il a pour objectif de refléter mes compétences techniques tout en mettant en a
 
 ---
 
-🛠️ **Statut** : 🟢 Fini 
+🛠️ **Statut** : 🟢 Fini  </br>
 📅 Dernière mise à jour : *16/08/2025*
 
 ---
