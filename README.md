@@ -12,8 +12,8 @@ Il a pour objectif de refléter mes compétences techniques tout en mettant en a
 ---
 
 <p align="center">
-  <img src="Presentation Clair.png" alt="Présentation du site clair" width="50%">
-  <img src="Presentation Sombre.png" alt="Présentation du site clair" width="50%">
+  <img src="Presentation Clair.png" alt="Présentation du site clair" width="48%">
+  <img src="Presentation Sombre.png" alt="Présentation du site clair" width="48%">
 </p>
 🚀 **Ce que vous y trouverez**
 - Des **projets** personnels et professionnels
