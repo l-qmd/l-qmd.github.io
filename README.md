@@ -11,6 +11,10 @@ Il a pour objectif de refléter mes compétences techniques tout en mettant en a
 
 ---
 
+<p align="center">
+  <img src="Presentation Clair.png" alt="Présentation du site clair" width="100%">
+  <img src="Presentation Sombre.png" alt="Présentation du site clair" width="100%">
+</p>
 🚀 **Ce que vous y trouverez**
 - Des **projets** personnels et professionnels
 - Mes **compétences** en développement web
