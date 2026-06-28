@@ -1,6 +1,6 @@
 # 🌐 l-qmd.github.io
 
-> [Accéder au site](https://l-qmd.github.io) — *Portfolio en cours de développement*
+> [Accéder au site](https://l-qmd.github.io) 
 
 ---
 
@@ -19,7 +19,7 @@ Il a pour objectif de refléter mes compétences techniques tout en mettant en a
 
 ---
 
-🛠️ **Statut** : En construction  
+🛠️ **Statut** : 🟢 Fini 
 📅 Dernière mise à jour : *16/08/2025*
 
 ---
