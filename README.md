@@ -1,4 +1,4 @@
-```markdown
+
 # 🌐 Portfolio – l-qmd.github.io
 
 > **Portfolio personnel développé en HTML, CSS et JavaScript**
@@ -73,4 +73,4 @@ L'objectif est de proposer une interface moderne, fluide et responsive, tout en 
 Merci d'avoir pris le temps de visiter mon portfolio.
 
 N'hésitez pas à me contacter ou à me suivre sur mes différents réseaux !
-```
+
